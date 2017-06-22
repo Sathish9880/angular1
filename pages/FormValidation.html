@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate</title>
+    <script src="../../angularjs/lib/angular.min.js"></script>
+    <script src="../controllers/validate.js"></script>
+</head>
+<body ng-app="myvalidate" ng-controller="validateController">
+{{msg}}<br>
+<form name="myform">
+<div>UserName:<input type="text" ng-model="username" required><br>
+<span ng-show="myform.username.$error.required">required</span>
+</div>
+
+<input type="button" value="Login">
+
+</form>
+</body>
+</html>

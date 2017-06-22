@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+-->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-app="empApp" ng-controller="testctrl">
+<h1 style="color:red;background: yellow">Jspiders</h1>
+
+<ul>
+    <li><a href="#/">Home</a></li>
+    <li><a href="#!/reg">Registartion</a></li>
+    <li><a href="#!/view">ViewEmp</a></li>
+</ul>
+{{msg}}
+<div ng-view=""></div>
+
+
+
+<h1 style="color:red;background:green;margin-top: 100px;">Qspiders</h1>
+
+</body>
+</html>
